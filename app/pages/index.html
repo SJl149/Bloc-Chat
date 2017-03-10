@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBT-cQItfmfyb7b_AjS53UVEY82ljyxke8",
+        authDomain: "bloc-chat-bb919.firebaseapp.com",
+        databaseURL: "https://bloc-chat-bb919.firebaseio.com",
+        storageBucket: "bloc-chat-bb919.appspot.com",
+        messagingSenderId: "1093806729230"
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <script src="/scripts/app.js"></script>
 </body>
 </html>
