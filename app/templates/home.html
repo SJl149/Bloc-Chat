@@ -1,4 +1,6 @@
-
-<div class="chatroom-container" ng-repeat="rooms in home.chatRooms">
-    <a class="chatroom-name" ui-sref="{{ rooms }}"></a>
-</div>
+<section class="chatroom-list-bar">
+    <h1 id="chatroom-list-title">Bloc Chat</h1>
+    <ul class="chatroom-list-container" ng-repeat="rooms in home.chatRooms.all">
+        <li><a class="chatroom-list-name" ui-sref="{{ rooms }}">{{ "Room " + rooms.$id }}</a></li>
+    </ul>
+</section>
