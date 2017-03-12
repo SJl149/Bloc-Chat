@@ -9,6 +9,6 @@
   }
 
   angular
-    .module('blocChat',[])
+    .module('blocChat')
     .factory('Room', ['$firebaseArray', Room]);
 })();

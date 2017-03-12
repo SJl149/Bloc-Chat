@@ -1,2 +1,4 @@
 
-<h1>Bloc Chat</h1>
+<div class="chatroom-container" ng-repeat="rooms in home.chatRooms">
+    <a class="chatroom-name" ui-sref="{{ rooms }}"></a>
+</div>
