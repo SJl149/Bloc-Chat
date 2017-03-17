@@ -1,6 +1,6 @@
 <section class="chatroom-list-bar">
     <h1 id="chatroom-list-title">Bloc Chat</h1>
-    <button type="button" class="btn btn-default" ng-controller="ModalCtrl as $ctrl" ng-click="$ctrl.open()">New room</button>
+    <button type="button" class="btn btn-default" ng-click="home.open()">New room</button>
     <ul class="chatroom-list-container" ng-repeat="rooms in home.chatRooms.all">
         <li><a class="chatroom-list-name" ui-sref="{{ rooms }}">{{ rooms.$value }}</a></li>
     </ul>

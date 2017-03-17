@@ -1,23 +1,11 @@
 (function () {
-    function ModalCtrl($uibModal) {
-        var $ctrl = this;
+    function ModalCtrl($uibModalInstance) {
         
-        $ctrl.open = function () {
-            
-        var modalInstance = open({
-            animation: false,
-            ariaLabelledBy: 'modal-title',
-            ariaDescribedBy: 'modal-body',
-            templateUrl: '/templates/modal.html',
-            controllerAs: '$ctrl', 
-            component: 'modal-new-room'
-            });
-            
-        };
+        
     }
    
     
     angular
         .module('blocChat')
-        .controller('ModalCtrl', ['Room', '$uibModal', ModalCtrl]);
+        .controller('ModalCtrl', ['Room', '$uibModalInstance', ModalCtrl]);
 })();
