@@ -1,5 +1,5 @@
 html {
-    height: 100%;
+    height: 100%;  
     font-size: 100%;
 }
 
@@ -27,4 +27,3 @@ a.chatroom-list-name {
     font-size: 1.3em;
     text-decoration: none;    
 }
-
