@@ -2,8 +2,8 @@
     <h3 class="modal-title">Create New Room</h3>
     <form name="createNewRoom" >
         <lable>Enter a room name</label>
-        <input type="text" name="name" maxlength="30" />
+        <input type="text" name="name" ng-model="name" maxlength="30" />
     </form>
     <button class="btn btn-cancel" type="button" ng-click="modal.cancel()">Cancel</button>
-    <button class="btn btn-create-room" type="button" ng-submit="modal.createRoom(createNewRoom.name)">Create room</button>
+    <button class="btn btn-create-room" type="button" ng-click="modal.createRoom(name)">Create room</button>
 </div>

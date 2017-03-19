@@ -7,9 +7,9 @@
         }; 
         
         button.createRoom = function(name) {
-            Room.createNewRoom(name);
-            console.log('Created a new room');
             $uibModalInstance.close();
+            Room.createRoom(name);
+            
         };
         
     }

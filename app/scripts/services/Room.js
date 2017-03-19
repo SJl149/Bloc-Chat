@@ -3,15 +3,16 @@
     var ref = firebase.database().ref().child('rooms');
     var rooms = $firebaseArray(ref);
     
-    Room.createNewRoom = function(newRoomName) {
-        console.log("called added room");
-        rooms.$add(newRoomName);
-        
-    };
-      
-    return {
+    Room.chatrooms = { 
         all: rooms
-    };
+    };  
+      
+    Room.createRoom = function(newRoomName) {
+        rooms.$add({$value: newRoomName});
+                
+    };  
+      
+    return Room;
   }
 
   angular
