@@ -6,7 +6,8 @@
             
             var modalInstance = $uibModal.open({
                 templateUrl: '/templates/modal.html',
-                controller: 'ModalCtrl as modal'
+                controller: 'ModalCtrl as modal',
+                size: 'sm'
             });
         }
     }
