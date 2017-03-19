@@ -6,7 +6,9 @@
             $uibModalInstance.dismiss('cancel');
         }; 
         
-        button.createRoom = function() {
+        button.createRoom = function(name) {
+            Room.createNewRoom(name);
+            console.log('Created a new room');
             $uibModalInstance.close();
         };
         
