@@ -7,8 +7,12 @@ html {
     padding: 15px;
     border-radius: 5px;
     background-color: #EAAB23;
-    height: 400px;
+    height: 1000px;
     width: 25%;
+}
+
+.btn:hover {
+    background-color: #169EE2;
 }
 
 .chatroom-list-container {
@@ -16,14 +20,32 @@ html {
     list-style-position: inside;
 }
 
-#chatroom-list-title {
+#chatroom-list-title, .modal-new-room h3 {
     font-family: 'Trirong', serif;
-    font-size: 2.5em;
+    font-size: 2.0em;
     color: #363F44;
 }
 
-a.chatroom-list-name {
+a.chatroom-list-name, .modal-new-room label {
     font-family: 'Rubik', sans-serif;
     font-size: 1.3em;
     text-decoration: none;    
+}
+
+.modal-new-room {
+    padding: 15px;
+    background-color: #80BED3;
+    border-radius: 5px;
+}
+
+.modal-new-room input {
+    width: 95%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.modal-new-room .btn {
+    width: 45%;
+    
+    margin: 1%;
 }
