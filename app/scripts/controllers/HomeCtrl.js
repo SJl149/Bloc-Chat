@@ -1,6 +1,6 @@
 (function () {
     function HomeCtrl(Room, $uibModal) {
-        this.chatRooms = Room.chatrooms;
+        this.chatRooms = Room.all;
         
         this.open = function() {
             
