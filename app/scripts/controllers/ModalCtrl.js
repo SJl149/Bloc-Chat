@@ -7,13 +7,10 @@
         }; 
         
         button.createRoom = function(name) {
-            
             Room.createRoom(name);
             $uibModalInstance.close();
-        };
-        
+        };   
     }
-   
     
     angular
         .module('blocChat')

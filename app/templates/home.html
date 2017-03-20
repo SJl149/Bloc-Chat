@@ -1,5 +1,7 @@
 <nav class="chatroom-list-bar">
     <h1 id="chatroom-list-title">Bloc Chat
     <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
-    
+    <ul class="chatroom-list-container" ng-repeat="room in home.chatRooms">
+       <li><a class="chatroom-list-name" >{{ room.name }}</a></li>
+    </ul>
 </nav>

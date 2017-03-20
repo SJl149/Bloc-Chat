@@ -6,14 +6,8 @@
     return {
         all: rooms,
         createRoom: function(newRoomName) {
-            rooms.$add({name: newRoomName}).then(function(ref) {
-               console.log(ref.key); 
-            }, function(error) {
-                    console.log(error);
-            });
-            console.log("I'm here");        
-        }
-        
+            rooms.$add({name: newRoomName});        
+        }    
     };
   }
 
