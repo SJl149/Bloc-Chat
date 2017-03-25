@@ -5,10 +5,10 @@ html {
 
 .chatroom-list-bar {
     padding: 15px;
-    border-radius: 5px;
     background-color: #EAAB23;
-    height: 1000px;
+    height: 1300px;
     width: 25%;
+    float: left;
 }
 
 .btn:hover {
@@ -20,16 +20,58 @@ html {
     list-style-position: inside;
 }
 
-#chatroom-list-title, .modal-new-room h3 {
+#chatroom-list-title, .modal-new-room h3, #current-chatroom-title {
     font-family: 'Trirong', serif;
     font-size: 2.0em;
     color: #363F44;
 }
 
+a.chatroom-list-name, .modal-new-room label, .individual-message-container {
+    font-family: 'Rubik', sans-serif;   
+}
+
 a.chatroom-list-name, .modal-new-room label {
-    font-family: 'Rubik', sans-serif;
     font-size: 1.3em;
-    text-decoration: none;    
+    text-decoration: none;
+}
+
+.current-chatroom-container {
+    padding: 15px 0px;
+}
+
+#current-chatroom-title {
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px;
+}
+
+.individual-message-container {
+    height: 100px;
+    padding: 20px;
+}
+
+.individual-message-container .message-username {
+    padding-left: 40px;
+    float: left;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.individual-message-container .message-time {
+    font-weight: lighter;
+    padding-right: 40px;
+    float: right;
+}
+
+.individual-message-container .message-content {
+    text-align: left;
+    
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+.individual-message-container:nth-child(odd) {
+    background-color: #169EE2;
 }
 
 .modal-new-room {

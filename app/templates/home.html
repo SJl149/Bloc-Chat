@@ -1,7 +1,22 @@
-<nav class="chatroom-list-bar">
-    <h1 id="chatroom-list-title">Bloc Chat
-    <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
-    <ul class="chatroom-list-container" ng-repeat="room in home.chatRooms">
-       <li><a class="chatroom-list-name" >{{ room.name }}</a></li>
-    </ul>
-</nav>
+<main>
+    <nav class="chatroom-list-bar">
+        <h1 id="chatroom-list-title">Bloc Chat
+        <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
+        <ul class="chatroom-list-container" ng-repeat="room in home.chatRooms">
+           <li><a class="chatroom-list-name" ng-click="home.displayCurrentRoom(room.name, room.$id)">{{ room.name }}</a></li>
+        </ul>
+    </nav>
+    <div class="current-chatroom-container">
+        <h2 id="current-chatroom-title">{{ home.currentRoom }}</h2>
+        <div class="current-chatroom-message-container">
+            <div class="individual-message-container" ng-repeat="message in home.messages">
+                <p class="message-username">{{ message.username }}</p>
+                <p class="message-time">{{ message.sentAt }}</p>
+                <br />
+                <p class="message-content">{{ message.content }}</p>
+            </div>   
+        </div>
+    </div>
+
+</main>
+
