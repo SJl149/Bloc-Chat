@@ -5,9 +5,8 @@ html {
 
 .chatroom-list-bar {
     padding: 15px;
-    border-radius: 5px;
     background-color: #EAAB23;
-    height: 1000px;
+    height: 1300px;
     width: 25%;
     float: left;
 }
@@ -48,6 +47,7 @@ a.chatroom-list-name, .modal-new-room label {
 
 .individual-message-container {
     height: 100px;
+    padding: 20px;
 }
 
 .individual-message-container .message-username {
@@ -64,7 +64,9 @@ a.chatroom-list-name, .modal-new-room label {
 }
 
 .individual-message-container .message-content {
-    padding-left: 40px;
+    text-align: left;
+    
+    padding-top: 10px;
     font-size: 1.1em;
 }
 

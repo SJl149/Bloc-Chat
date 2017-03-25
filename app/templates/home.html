@@ -3,21 +3,20 @@
         <h1 id="chatroom-list-title">Bloc Chat
         <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
         <ul class="chatroom-list-container" ng-repeat="room in home.chatRooms">
-           <li><a class="chatroom-list-name" >{{ room.name }}</a></li>
+           <li><a class="chatroom-list-name" ng-click="home.displayCurrentRoom(room.name, room.$id)">{{ room.name }}</a></li>
         </ul>
     </nav>
     <div class="current-chatroom-container">
-        <h2 id="current-chatroom-title">Room 1</h2>
+        <h2 id="current-chatroom-title">{{ home.currentRoom }}</h2>
         <div class="current-chatroom-message-container">
-            <div class="individual-message-container">
-                <p class="message-username">Username 1</p>
-                <p class="message-time">2:59pm</p>
-                <br/>
-                <p class="message-content">This is a cool chatroom!</p>
+            <div class="individual-message-container" ng-repeat="message in home.messages">
+                <p class="message-username">{{ message.username }}</p>
+                <p class="message-time">{{ message.sentAt }}</p>
+                <br />
+                <p class="message-content">{{ message.content }}</p>
             </div>   
         </div>
     </div>
 
 </main>
 
-<!-- ng-click="displayCurrentRoom(room.name)" -->
