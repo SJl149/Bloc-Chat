@@ -15,8 +15,11 @@
                 controller: 'ModalCtrl as modal',
                 size: 'sm'
             });
-        }
+        };
         
+        this.send = function(newMessage) {
+            Message.send(newMessage);
+        }        
     }
     
     angular
