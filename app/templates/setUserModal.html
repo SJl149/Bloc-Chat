@@ -1,0 +1,8 @@
+<div class="modal-set-user">
+    <h3 class="modal-title">Set a username</h3>
+    <form name="setUserName" >
+        <label>This name will appear when you send messages:</label>
+        <input type="text" name="userName" ng-model="userName" maxlength="30" required />    
+    </form>
+    <button class="btn btn-set-user" type="button" ng-disabled="setUserName.userName.$invalid" ng-click="setUserModal.setUsername(userName)">Set username</button>
+</div>

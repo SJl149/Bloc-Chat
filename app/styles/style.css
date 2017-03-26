@@ -20,17 +20,22 @@ html {
     list-style-position: inside;
 }
 
-#chatroom-list-title, .modal-new-room h3, #current-chatroom-title {
+#chatroom-list-title, .modal-title, #current-chatroom-title {
     font-family: 'Trirong', serif;
     font-size: 2.0em;
     color: #363F44;
 }
 
-a.chatroom-list-name, .modal-new-room label, .individual-message-container {
-    font-family: 'Rubik', sans-serif;   
+.modal-set-user .modal-title {
+    text-align: center;
+    padding-bottom: 1%;
 }
 
-a.chatroom-list-name, .modal-new-room label {
+a.chatroom-list-name, .modal-new-room label, .individual-message-container, .modal-set-user label {
+    font-family: 'Rubik', sans-serif; 
+}
+
+a.chatroom-list-name {
     font-size: 1.3em;
     text-decoration: none;
 }
@@ -71,23 +76,27 @@ a.chatroom-list-name, .modal-new-room label {
 }
 
 .individual-message-container:nth-child(odd) {
-    background-color: #169EE2;
+    background-color: rgba(22, 158, 226, 0.7);
 }
 
-.modal-new-room {
+.modal-new-room, .modal-set-user {
     padding: 15px;
     background-color: #80BED3;
     border-radius: 5px;
 }
 
-.modal-new-room input {
+.modal-new-room input, .modal-set-user input {
     width: 95%;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
 .modal-new-room .btn {
-    width: 45%;
-    
+    width: 45%;    
+    margin: 1%;
+}
+
+.modal-set-user .btn {
+    width: 95%;
     margin: 1%;
 }
