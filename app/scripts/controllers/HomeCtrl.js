@@ -17,8 +17,9 @@
             });
         };
         
-        this.send = function(newMessage) {
-            Message.send(newMessage);
+        this.send = function() {
+            Message.send(this.newMessage);
+            this.newMessage = "";
         }        
     }
     
