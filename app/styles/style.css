@@ -11,6 +11,10 @@ html {
     float: left;
 }
 
+.btn {
+    background-color: #cfe8fc;
+}
+
 .btn:hover {
     background-color: #169EE2;
 }
@@ -77,6 +81,32 @@ a.chatroom-list-name {
 
 .individual-message-container:nth-child(odd) {
     background-color: rgba(22, 158, 226, 0.7);
+}
+
+.enter-message-container {
+    position: fixed;
+    bottom: 0px;
+    left: 25%;
+    width: 90%;
+    height: 100px;
+    padding: 0;
+}
+
+.enter-message-container input[type="text"] {
+    width: 75%;
+    height: 100px;
+    background-color: rgba(128, 190, 211, 0.7);
+    float: left;
+    font-size: 1.3em;
+    padding-left: 10px;
+    border: none;
+}
+
+.btn-send-new-message {
+    height: 100%;
+    width: 100px;
+    margin-right: 10px; 
+    text-align: center;
 }
 
 .modal-new-room, .modal-set-user {

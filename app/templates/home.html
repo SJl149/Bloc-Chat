@@ -17,6 +17,12 @@
             </div>   
         </div>
     </div>
-
+    <div class="enter-message-container">
+        <form class="enter-message">
+            <input type="text" name="newMessage" ng-model="home.newMessage" placeholder="Write your message here..." />
+        
+            <button class="btn btn-send-new-message" type="button" ng-click="home.send()">Send</button>
+        </form>
+    </div>
 </main>
 
