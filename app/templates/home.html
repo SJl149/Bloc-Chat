@@ -9,9 +9,9 @@
     <div class="current-chatroom-container">
         <h2 id="current-chatroom-title">{{ home.currentRoom }}</h2>
         <div class="current-chatroom-message-container">
-            <div class="individual-message-container" ng-repeat="message in home.messages">
+            <div class="individual-message-container" ng-repeat="message in home.messages | orderBy: '-sentAt' ">
                 <p class="message-username">{{ message.username }}</p>
-                <p class="message-time">{{ message.sentAt }}</p>
+                <p class="message-time">{{ message.sentAt | date:'short' }}</p>
                 <br />
                 <p class="message-content">{{ message.content }}</p>
             </div>   

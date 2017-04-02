@@ -2,6 +2,7 @@
     function Message($cookies, $filter, $firebaseArray) {
         var ref = firebase.database().ref().child('messages');
         var messages = $firebaseArray(ref);
+        var time = Date.now();
         
         Message.currentRoom = null;
         
@@ -16,7 +17,7 @@
                 messages.$add({
                     content: newMessage,
                     roomId: Message.currentRoom,
-                    sentAt: $filter('date')(new Date(), 'short'),
+                    sentAt: time,
                     username: $cookies.get('blocChatCurrentUser')
                 });
                 
