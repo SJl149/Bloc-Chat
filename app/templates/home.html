@@ -1,6 +1,6 @@
 <main>
     <nav class="chatroom-list-bar">
-        <h1 id="chatroom-list-title">Bloc Chat
+        <h1 id="chatroom-list-title">RealChat
         <button type="button" class="btn btn-default" ng-click="home.open()">New room</button></h1>
         <ul class="chatroom-list-container" ng-repeat="room in home.chatRooms">
            <li><a class="chatroom-list-name" ng-click="home.displayCurrentRoom(room.name, room.$id)">{{ room.name }}</a></li>
@@ -14,15 +14,14 @@
                 <p class="message-time">{{ message.sentAt | date:'short' }}</p>
                 <br />
                 <p class="message-content">{{ message.content }}</p>
-            </div>   
+            </div>
         </div>
     </div>
     <div class="enter-message-container">
         <form class="enter-message">
             <input type="text" name="newMessage" ng-model="home.newMessage" placeholder="Write your message here..." />
-        
+
             <button class="btn btn-send-new-message" type="button" ng-click="home.send()">Send</button>
         </form>
     </div>
 </main>
-
